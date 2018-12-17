@@ -30,7 +30,7 @@ var params = {
 	lineColor: '#000',
 	lineWidth: 5,
 	fps: 10,
-	planeSize: 1.25,
+	planeSize: 2,
 	markerPath: "ARpoetry"
 }
 
