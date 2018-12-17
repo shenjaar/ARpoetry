@@ -95,7 +95,7 @@ function init() {
 	// initialize arToolkitContext
 	// create atToolkitContext
 	arToolkitContext = new THREEx.ArToolkitContext({
-		cameraParametersUrl: THREEx.ArToolkitContext.baseURL + '/data/camera_para.dat',
+		cameraParametersUrl: THREEx.ArToolkitContext.baseURL + 'ARpoetry/data/camera_para.dat',
 		detectionMode: 'mono',
 		patternRatio: 0.8,
 	})
@@ -134,7 +134,7 @@ function init() {
 	scene.add(markerRoot1)
 	var markerControls = new THREEx.ArMarkerControls(arToolkitContext, markerRoot1, {
 		type: 'pattern',
-		patternUrl: THREEx.ArToolkitContext.baseURL + '/patterns/pattern-marker1.patt',
+		patternUrl: THREEx.ArToolkitContext.baseURL + 'ARpoetry/patterns/pattern-marker1.patt',
 		// patternUrl : THREEx.ArToolkitContext.baseURL + '../data/data/patt.kanji',
 	})
 	addPlane(markerRoot1);
@@ -150,7 +150,7 @@ function init() {
 	var markerControls = new THREEx.ArMarkerControls(arToolkitContext, markerRoot2, {
 		type: 'pattern',
 		// patternUrl : THREEx.ArToolkitContext.baseURL + '../data/data/patt.hiro',
-		patternUrl: THREEx.ArToolkitContext.baseURL + '/patterns/pattern-marker2.patt',
+		patternUrl: THREEx.ArToolkitContext.baseURL + 'ARpoetry/patterns/pattern-marker2.patt',
 	})
 	addPlane(markerRoot2);
 
@@ -165,7 +165,7 @@ function init() {
 	var markerControls = new THREEx.ArMarkerControls(arToolkitContext, markerRoot3, {
 		type: 'pattern',
 		// patternUrl : THREEx.ArToolkitContext.baseURL + '../data/data/patt.hiro',
-		patternUrl: THREEx.ArToolkitContext.baseURL + '/patterns/pattern-marker3.patt',
+		patternUrl: THREEx.ArToolkitContext.baseURL + 'ARpoetry/patterns/pattern-marker3.patt',
 	})
 	addPlane(markerRoot3);
 
@@ -180,7 +180,7 @@ function init() {
 	var markerControls = new THREEx.ArMarkerControls(arToolkitContext, markerRoot4, {
 		type: 'pattern',
 		// patternUrl : THREEx.ArToolkitContext.baseURL + '../data/data/patt.hiro',
-		patternUrl: THREEx.ArToolkitContext.baseURL + '/patterns/pattern-marker4.patt',
+		patternUrl: THREEx.ArToolkitContext.baseURL + 'ARpoetry/patterns/pattern-marker4.patt',
 	})
 	addPlane(markerRoot4);
 
