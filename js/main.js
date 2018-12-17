@@ -5,9 +5,9 @@ var renderer, scene, camera, arToolkitSource, arToolkitContext;
 
 // normanHelper + custom positioning
 var markerRoot1Anim = {
-	_customposition: [0.72,8.32,0],
+	_customposition: [0.36,7.68,-3.04],
 	_customscale: 14,
-	_customrotation: [-0.24 ,1.57,0]
+	_customrotation: [-0.66 ,1.17,-0.04]
 };
 var markerRoot2Anim = {
 	_customposition: [1.18,6.02,-1.48],
@@ -15,14 +15,14 @@ var markerRoot2Anim = {
 	_customrotation: [-0.59,0.06,-0.44]
 };
 var markerRoot3Anim = {
-	_customposition: [-3.48,2.76,-0.04],
+	_customposition: [-3.58,2.36,-1.42],
 	_customscale: 12,
-	_customrotation: [0,3.14,0]
+	_customrotation: [-0.56,3.08,0]
 };
 var markerRoot4Anim = {
-	_customposition: [-1.40,1.18,-3.40],
+	_customposition: [-1.40,0.04,-3.46],
 	_customscale: 12,
-	_customrotation: [1.66,-5.28,3.86]
+	_customrotation: [1.32,-5.28,3.86]
 };
 var markerRoot1, markerRoot2, markerRoot3, markerRoot4;
 
@@ -31,6 +31,7 @@ var params = {
 	lineWidth: 5,
 	fps: 10,
 	planeSize: 1.25,
+	markerPath: "ARpoetry"
 }
 
 var camera, scene, renderer, stats, currentTime, previousTime;
@@ -95,7 +96,7 @@ function init() {
 	// initialize arToolkitContext
 	// create atToolkitContext
 	arToolkitContext = new THREEx.ArToolkitContext({
-		cameraParametersUrl: THREEx.ArToolkitContext.baseURL + 'ARpoetry/data/camera_para.dat',
+		cameraParametersUrl: THREEx.ArToolkitContext.baseURL + params.markerPath + '/data/camera_para.dat',
 		detectionMode: 'mono',
 		patternRatio: 0.8,
 	})
@@ -134,7 +135,7 @@ function init() {
 	scene.add(markerRoot1)
 	var markerControls = new THREEx.ArMarkerControls(arToolkitContext, markerRoot1, {
 		type: 'pattern',
-		patternUrl: THREEx.ArToolkitContext.baseURL + 'ARpoetry/patterns/pattern-marker1.patt',
+		patternUrl: THREEx.ArToolkitContext.baseURL + params.markerPath + '/patterns/pattern-marker1.patt',
 		// patternUrl : THREEx.ArToolkitContext.baseURL + '../data/data/patt.kanji',
 	})
 	addPlane(markerRoot1);
@@ -150,7 +151,7 @@ function init() {
 	var markerControls = new THREEx.ArMarkerControls(arToolkitContext, markerRoot2, {
 		type: 'pattern',
 		// patternUrl : THREEx.ArToolkitContext.baseURL + '../data/data/patt.hiro',
-		patternUrl: THREEx.ArToolkitContext.baseURL + 'ARpoetry/patterns/pattern-marker2.patt',
+		patternUrl: THREEx.ArToolkitContext.baseURL + params.markerPath + '/patterns/pattern-marker2.patt',
 	})
 	addPlane(markerRoot2);
 
@@ -165,7 +166,7 @@ function init() {
 	var markerControls = new THREEx.ArMarkerControls(arToolkitContext, markerRoot3, {
 		type: 'pattern',
 		// patternUrl : THREEx.ArToolkitContext.baseURL + '../data/data/patt.hiro',
-		patternUrl: THREEx.ArToolkitContext.baseURL + 'ARpoetry/patterns/pattern-marker3.patt',
+		patternUrl: THREEx.ArToolkitContext.baseURL + params.markerPath + '/patterns/pattern-marker3.patt',
 	})
 	addPlane(markerRoot3);
 
@@ -180,7 +181,7 @@ function init() {
 	var markerControls = new THREEx.ArMarkerControls(arToolkitContext, markerRoot4, {
 		type: 'pattern',
 		// patternUrl : THREEx.ArToolkitContext.baseURL + '../data/data/patt.hiro',
-		patternUrl: THREEx.ArToolkitContext.baseURL + 'ARpoetry/patterns/pattern-marker4.patt',
+		patternUrl: THREEx.ArToolkitContext.baseURL + params.markerPath + '/patterns/pattern-marker4.patt',
 	})
 	addPlane(markerRoot4);
 
