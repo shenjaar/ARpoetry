@@ -95,7 +95,7 @@ function init() {
 	// initialize arToolkitContext
 	// create atToolkitContext
 	arToolkitContext = new THREEx.ArToolkitContext({
-		cameraParametersUrl: THREEx.ArToolkitContext.baseURL + '../data/camera_para.dat',
+		cameraParametersUrl: THREEx.ArToolkitContext.baseURL + '/data/camera_para.dat',
 		detectionMode: 'mono',
 		patternRatio: 0.8,
 	})
