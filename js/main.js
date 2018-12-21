@@ -6,22 +6,22 @@ var renderer, scene, camera, arToolkitSource, arToolkitContext;
 // normanHelper + custom positioning
 var markerRoot1Anim = {
 	_customposition: [0.36,7.68,-3.04],
-	_customscale: 14,
+	_customscale: 4,
 	_customrotation: [-0.66 ,1.17,-0.04]
 };
 var markerRoot2Anim = {
 	_customposition: [1.18,6.02,-1.48],
-	_customscale: 16,
+	_customscale: 6,
 	_customrotation: [-0.59,0.06,-0.44]
 };
 var markerRoot3Anim = {
 	_customposition: [-3.58,2.36,-1.42],
-	_customscale: 12,
+	_customscale: 2,
 	_customrotation: [-0.56,3.08,0]
 };
 var markerRoot4Anim = {
 	_customposition: [-1.40,0.04,-3.46],
-	_customscale: 12,
+	_customscale: 2,
 	_customrotation: [1.32,-5.28,3.86]
 };
 var markerRoot1, markerRoot2, markerRoot3, markerRoot4;
