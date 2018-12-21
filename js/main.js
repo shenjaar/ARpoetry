@@ -5,12 +5,12 @@ var renderer, scene, camera, arToolkitSource, arToolkitContext;
 
 // normanHelper + custom positioning
 var markerRoot1Anim = {
-	_customposition: [0.36,7.68,-3.04],
+	_customposition: [0.50,7.68,-3.04],
 	_customscale: 14,
 	_customrotation: [-0.66 ,1.17,-0.04]
 };
 var markerRoot2Anim = {
-	_customposition: [1.00,6.02,-1.48],
+	_customposition: [1.18,6.02,-1.48],
 	_customscale: 16,
 	_customrotation: [-0.59,0.06,-0.44]
 };
