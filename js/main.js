@@ -10,7 +10,7 @@ var markerRoot1Anim = {
 	_customrotation: [-0.66 ,1.17,-0.04]
 };
 var markerRoot2Anim = {
-	_customposition: [1.18,6.02,-1.48],
+	_customposition: [1.30,6.02,-1.48],
 	_customscale: 16,
 	_customrotation: [-0.59,0.06,-0.44]
 };
